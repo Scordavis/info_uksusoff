@@ -183,35 +183,42 @@ th {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 100;
-  src: local('Roboto Thin'), local('Roboto-Thin'), url(https://fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1MmgVxMIzc.ttf) format('truetype');
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(https://fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1MmgVxIIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu5mxP.ttf) format('truetype');
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fABc9.ttf) format('truetype');
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfABc9.ttf) format('truetype');
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 100;
-  src: local('Roboto Slab Thin'), local('RobotoSlab-Thin'), url(https://fonts.gstatic.com/s/robotoslab/v7/BngOUXZYTXPIvIBgJJSb6u-u1qOh4Q.ttf) format('truetype');
+  src: local('Roboto Slab Thin'), local('RobotoSlab-Thin'), url(https://fonts.gstatic.com/s/robotoslab/v7/BngOUXZYTXPIvIBgJJSb6u-u1qeh4Q.ttf) format('truetype');
 }
 body {
   min-width: 480px;
   color: #333b44;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 1.7;
   font-weight: 400;
@@ -257,7 +264,7 @@ body {
   line-height: 1.2;
 }
 .top-header__text span {
-  font-weight: 700;
+  font-weight: 500;
 }
 .top-header__button {
   background-color: transparent;
@@ -462,7 +469,11 @@ body {
   color: #333b44;
   border-bottom: 3px solid #333b44;
 }
-.pains {
+.block-heading--light {
+  color: white;
+  border-bottom: 3px solid white;
+}
+.pains-wrapper {
   background-color: #f5f5f5;
 }
 .pains__row {
@@ -510,4 +521,210 @@ body {
 }
 .pains__img--fourth {
   background-image: url('http://workshop.scordavis.com/backdoor/info-uksusoff/icons/p_piggy.svg');
+}
+.profit-wrapper {
+  background-image: url('../img/bg-profit.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.profit__row {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.profit__item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 48%;
+  margin-bottom: 100px;
+  color: white;
+}
+.profit__img {
+  margin-right: 42px;
+}
+.profit__content {
+  position: relative;
+  border-bottom: 1px dashed white;
+}
+.profit__heading {
+  margin-top: 0;
+}
+.profit__text {
+  margin-bottom: 4px;
+  font-weight: 100;
+}
+.couchers__wrapper {
+  background-image: url('http://workshop.scordavis.com/backdoor/info-uksusoff/icons/pattern.jpg');
+  background-repeat: repeat;
+  -webkit-background-size: auto;
+  background-size: auto;
+  background-position: center;
+}
+.couchers__item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 130px;
+}
+.couchers__item:last-child {
+  margin-bottom: 0;
+}
+.couchers__ava {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+  margin-bottom: 0;
+}
+.couchers__img {
+  width: 263px;
+  height: 263px;
+  border: 4px solid #ce9267;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+}
+.couchers__date {
+  width: 68px;
+  height: 68px;
+  margin-top: 16px;
+  padding-top: 14px;
+  background-color: #ce9267;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  line-height: 0.7;
+}
+.couchers__date span {
+  font-size: 20px;
+  font-weight: 100;
+}
+.couchers__heading {
+  margin-top: 0;
+  font-weight: 700;
+  color: #495461;
+}
+.couchers__text {
+  font-weight: 100;
+}
+.trigger__wrapper {
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.trigger__wrapper--first {
+  background-image: url('../img/bg-trigger-1.jpg');
+}
+.trigger__wrapper .trigger {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+.trigger__wrapper .trigger__offer {
+  font-size: 36px;
+  margin-bottom: 52px;
+}
+.trigger__wrapper .trigger__offer span {
+  color: #ce9267;
+}
+.trigger__wrapper .trigger__prices {
+  text-transform: lowercase;
+  margin-bottom: 58px;
+}
+.trigger__wrapper .trigger__prices--old {
+  margin-bottom: 0;
+  color: #d54648;
+  font-size: 30px;
+  font-weight: 100;
+}
+.trigger__wrapper .trigger__prices--old span {
+  text-decoration: line-through;
+}
+.trigger__wrapper .trigger__prices--new {
+  font-size: 24px;
 }

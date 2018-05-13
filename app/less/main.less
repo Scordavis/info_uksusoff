@@ -5,6 +5,7 @@
 body{
 	min-width: 480px;
 	color: @mainColor;
+	font-family: @mainFont;
 	font-size: @defoltSize;
 	line-height: @defoltLineHeight;
 	font-weight: @reg;
@@ -29,7 +30,7 @@ body{
 	align-items: center;
 	min-height: 83px;
 	color: white;
-	font-weight: @light;
+	font-weight: @thin;
 	&:before, &:after{
 		display: none;
 
@@ -40,11 +41,11 @@ body{
 	}
 	&__text{
 		font-family: @mainFont;
-		font-weight: @light;
+		font-weight: @thin;
 		text-align: center;
 		line-height: 1.2;
 		span{
-			font-weight: @bold;
+			font-weight: @med;
 
 		}
 
@@ -82,7 +83,7 @@ body{
 	}
 	&__button-text{
 		font-style: normal;
-		font-weight: @light;
+		font-weight: @thin;
 		letter-spacing: 1px;
 
 	}
@@ -245,13 +246,19 @@ body{
 	font-size: 36px;
 	color: @mainColor;
 	border-bottom: 3px solid @mainColor;
+	&--light{
+		color: white;
+		border-bottom: 3px solid white;
+	}
 
 }
 // .pains
-.pains{
+.pains-wrapper{
 	background-color: darken(white, 4%);
 	// border-top: 4px solid @thirdColor;
 	// border-bottom: 4px solid @thirdColor;
+}
+.pains{
 	&__row{
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -300,6 +307,193 @@ body{
 	}
 
 }
+// profit
+.profit-wrapper{
+	background-image: url('../img/bg-profit.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+}
+.profit{
+	&__row{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+
+	}
+	&__item{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		max-width: 48%;
+		margin-bottom: 100px;
+		color: white;
+
+	}
+	&__img{
+		margin-right: 42px;
+
+	}
+	&__content{
+		position: relative;
+		border-bottom: 1px dashed white;
+
+	}
+	&__heading{
+		margin-top: 0;
+
+	}
+	&__text{
+		margin-bottom: 4px;
+		font-weight: @thin;
+
+	}
+
+}
+// .couchers
+.couchers__wrapper{
+	background-image: url('http://workshop.scordavis.com/backdoor/info-uksusoff/icons/pattern.jpg');
+	background-repeat: repeat;
+	-webkit-background-size: auto;
+	background-size: auto;
+	background-position: center;
+
+}
+.couchers{
+	&__item{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: flex-start;
+		justify-content: space-between;
+		margin-bottom: 130px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+	}
+	&__ava{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		margin-right: 30px;
+		margin-bottom: 0;
+
+	}
+	&__img{
+		width: 263px;
+		height: 263px;
+		border: 4px solid @secondColor;
+		border-radius: 100%;
+	}
+	&__date{
+		width: 68px;
+		height: 68px;
+		margin-top: 16px;
+		padding-top: 14px;
+		background-color: @secondColor;
+		border-radius: 100%;
+		color: white;
+		text-align: center;
+		font-size: 28px;
+		line-height: @defoltLineHeight - 1;
+		span{
+			font-size: 20px;
+			font-weight: @thin
+		}
+
+	}
+	&__content{
+
+	}
+	&__heading{
+		margin-top: 0;
+		font-weight: @bold;
+		color: lighten(@mainColor, 10%);
+
+	}
+	&__text{
+		font-weight: @thin
+
+	}
+
+}
+// .trigger
+.trigger__wrapper{
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	&--first{
+		background-image: url('../img/bg-trigger-1.jpg');
+
+	}
+	.trigger{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content: space-between;
+		// min-height: 500px;
+		color: white;
+			text-align: center;
+		text-transform: uppercase;
+		&__offer{
+			font-size: 36px;
+			margin-bottom: 52px;
+			span{
+				color: @secondColor;
+			}
+
+		}
+		&__prices{
+			text-transform: lowercase;
+			margin-bottom: 58px;
+			&--old{
+				margin-bottom: 0;
+				color: @accentColor;
+				font-size: 30px;
+				font-weight: @thin;
+				span{
+					text-decoration: line-through;
+
+				}
+
+			}
+			&--new{
+				font-size: 24px;
+
+			}
+
+		}
+
+	}
+
+}
+
+
+
+
 
 
 
