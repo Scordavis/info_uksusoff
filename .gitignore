@@ -5,6 +5,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Ignore PSD assets folder
+/._psd
+
 # Runtime data
 pids
 *.pid
