@@ -1,7 +1,310 @@
-@import 'fonts.less';
+@import '../libs/bootstrap/less/normalize.less';
 @import 'vars.less';
+@import 'fonts.less';
 
 body{
+	min-width: 480px;
+	color: @mainColor;
+	font-size: @defoltSize;
+	line-height: @defoltLineHeight;
+	font-weight: @reg;
+	// letter-spacing: 1px;
+
 }
+.intro-wrapper{
+	min-height: 740px;
+  background-image: -moz-linear-gradient( -159deg, rgb(44,52,60) 0%, rgb(53,66,82) 21%, rgb(61,80,103) 38%, rgb(61,76,95) 61%, rgb(44,52,60) 99%);
+  background-image: -webkit-linear-gradient( -159deg, rgb(44,52,60) 0%, rgb(53,66,82) 21%, rgb(61,80,103) 38%, rgb(61,76,95) 61%, rgb(44,52,60) 99%);
+  background-image: -ms-linear-gradient( -159deg, rgb(44,52,60) 0%, rgb(53,66,82) 21%, rgb(61,80,103) 38%, rgb(61,76,95) 61%, rgb(44,52,60) 99%);
+
+}
+.top-header{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 83px;
+	color: white;
+	font-weight: @light;
+	&:before, &:after{
+		display: none;
+
+	}
+
+	&__logo{
+
+	}
+	&__text{
+		font-family: @mainFont;
+		font-weight: @light;
+		text-align: center;
+		line-height: 1.2;
+		span{
+			font-weight: @bold;
+
+		}
+
+	}
+	&__button{
+		background-color: transparent;
+		border: none;
+		text-align: center;
+		font-size: 12px;
+
+	}
+	&__button-wrapper{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-around;
+		align-items: center;
+		width: 42px;
+		height: 32px;
+		padding: 4px 0;
+		background-color: white;
+		border-radius: 4px;
+		span{
+			display: inline-block;
+			width: 32px;
+			height: 4px;
+			border-radius: 2px;
+			background-color: @mainColor;
+
+		}
+
+	}
+	&__button-text{
+		font-style: normal;
+		font-weight: @light;
+		letter-spacing: 1px;
+
+	}
+
+}
+
+// header-wrapper
+.header-wrapper{
+	display: flex;
+	flex-flow: row nowrap;
+	color: white;
+	padding-top: 54px;
+
+}
+// .header-content
+.header-content{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	&__author{
+		font-size: 24px;
+		span{
+			display: inline-block;
+			margin-bottom: 0;
+			font-size: 36px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			line-height: 50px;
+			border-bottom: 2px solid white;
+
+		}
+
+	}
+	&__title{
+		font-size: 60px;
+		text-transform: uppercase;
+		line-height: 30px;
+		span{
+			font-size: 24px;
+			text-transform: none;
+		}
+	}
+
+}
+
+// .main-buttom
+.main-button{
+	width: 222px;
+	height: 52px;
+	background-color: @accentColor;
+	border: 1px solid white;
+	border-radius: 4px;
+	color: white;
+	font-size: 24px;
+	text-transform: uppercase;
+	.transition (.3s);
+	&:hover{
+		background-color: transparent;
+		// border-color: @accentColor;
+		// color: @accentColor;
+
+	}
+
+}
+
+// .limits
+.limits{
+	margin-top: 35px;
+	&__offer{
+		display: inline-block;
+		margin-right: 10px;
+
+	}
+	&__danger{
+		display: inline-block;
+		height: 32px;
+		padding: 0px 10px;
+		background-color: white;
+		color: @accentColor;
+
+	}
+	&__digit{
+		border-left: 1px solid @accentColor;
+		padding-left: 4px;
+
+	}
+
+}
+
+// .socials
+.socials{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	max-width: 360px;
+	margin-bottom: 30px;
+	opacity: 1;
+	&__item{
+		display: block;
+		width: 30px;
+		height: 30px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+		.transition(.3s);
+		&--ok{
+			background-image: url('http://workshop.scordavis.com/backdoor/info-uksusoff/icons/s_ok.svg');
+
+		}
+		&--vk{
+			background-image: url('http://workshop.scordavis.com/backdoor/info-uksusoff/icons/s_vk.svg');
+
+		}
+		&--insta{
+			background-image: url('http://workshop.scordavis.com/backdoor/info-uksusoff/icons/s_insta.svg');
+
+		}
+		&--facebook{
+			background-image: url('http://workshop.scordavis.com/backdoor/info-uksusoff/icons/s_facebook.svg');
+
+		}
+		&--twitter{
+			background-image: url('http://workshop.scordavis.com/backdoor/info-uksusoff/icons/s_twitter.svg');
+
+		}
+		&:hover{
+			opacity: .5;
+
+		}
+
+	}
+
+}
+
+// .header-img
+.header-img{
+	display: block;
+	position: relative;
+	left: 100px;
+	overflow: visible;
+	&__author{
+	}
+
+}
+// .padding-block
+.padding-block{
+	padding-top: 60px;
+	padding-bottom: 100px;
+
+}
+// .block-heading
+.block-heading{
+	width: fit-content;
+	margin-bottom: 100px;
+	padding-bottom: 10px;
+	font-size: 36px;
+	color: @mainColor;
+	border-bottom: 3px solid @mainColor;
+
+}
+// .pains
+.pains{
+	background-color: darken(white, 4%);
+	// border-top: 4px solid @thirdColor;
+	// border-bottom: 4px solid @thirdColor;
+	&__row{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+
+	}
+	&__item{
+		max-width: 25%;
+		padding: 0 20px;
+		text-align: center;
+		line-height: @defoltLineHeight - 0.3;
+
+	}
+	&__img{
+		display: block;
+		height: 70px;
+		width: auto;
+		margin-bottom: 38px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+		&--first{
+			background-image: url('http://workshop.scordavis.com/backdoor/info-uksusoff/icons/p_hourglass.svg');
+
+		}
+		&--second{
+			background-image: url('http://workshop.scordavis.com/backdoor/info-uksusoff/icons/p_dancing.svg');
+
+		}
+		&--third{
+			background-image: url('http://workshop.scordavis.com/backdoor/info-uksusoff/icons/p_bag.svg');
+
+		}
+		&--fourth{
+			background-image: url('http://workshop.scordavis.com/backdoor/info-uksusoff/icons/p_piggy.svg');
+
+		}
+
+	}
+	&__text{
+
+	}
+
+}
+
+
+
+
+
+
 
 @import '_media';

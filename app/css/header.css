@@ -1,0 +1,20 @@
+.header-wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  color: white;
+  padding-top: 54px;
+}
+.header-content__author {
+  font-size: 24px;
+  border-bottom: 2px solid white;
+}

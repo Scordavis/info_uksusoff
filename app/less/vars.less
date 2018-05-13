@@ -1,12 +1,29 @@
 // fonts variable
-@defoltFont: 'Comfortaa', cursive;
+// @mainFont: 'Roboto', sans-serif;
 
 // color variable
-@mainColor: #ead28b;
+@accentColor: #d54648;
+@mainColor: #333b44;
+@thirdColor: #38a1a5;
 
 // typografy
-@defoltSize: 16px;
-@light: 300;
+@defoltSize: 18px;
+@light: 100;
 @reg: 400;
+@med: 500;
 @bold: 700;
-@defoltLineHeight: 1.5;
+@defoltLineHeight: 1.7;
+
+// transition
+.transition (@transition) {
+	-webkit-transition: @transition;
+	-moz-transition:    @transition;
+	-ms-transition:     @transition;
+	-o-transition:      @transition;
+}
+.transition-delay (@delay) {
+	-webkit-transition-delay: @delay;
+	-moz-transition-delay:    @delay;
+	-ms-transition-delay:     @delay;
+	-o-transition-delay:      @delay;
+}
