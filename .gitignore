@@ -6,7 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Ignore PSD assets folder
-/._psd
+/_psd
 
 # Runtime data
 pids
