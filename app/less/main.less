@@ -236,6 +236,9 @@ body{
 .padding-block{
 	padding-top: 60px;
 	padding-bottom: 100px;
+	&--top{
+		padding-bottom: 0;
+	}
 
 }
 // .block-heading
@@ -246,9 +249,19 @@ body{
 	font-size: 36px;
 	color: @mainColor;
 	border-bottom: 3px solid @mainColor;
+	span{
+		text-transform: uppercase;
+
+	}
 	&--light{
 		color: white;
 		border-bottom: 3px solid white;
+
+	}
+	&--center{
+		margin: auto;
+		margin-bottom: 100px;
+
 	}
 
 }
@@ -260,10 +273,6 @@ body{
 }
 .pains{
 	&__row{
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
@@ -490,8 +499,132 @@ body{
 	}
 
 }
+// .steps
+.steps__wrapper{
+	overflow: hidden;
+	background-image: -moz-linear-gradient( -159deg, rgb(52,95,144) 0%, rgb(51,102,158) 25%, rgb(50,109,172) 46%, rgb(52,95,144) 100%);
+	background-image: -webkit-linear-gradient( -159deg, rgb(52,95,144) 0%, rgb(51,102,158) 25%, rgb(50,109,172) 46%, rgb(52,95,144) 100%);
+	background-image: -ms-linear-gradient( -159deg, rgb(52,95,144) 0%, rgb(51,102,158) 25%, rgb(50,109,172) 46%, rgb(52,95,144) 100%);
 
+}
+.steps{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-content: stretch;
+	align-items: flex-start;
+	min-height: 1064px;
+	&__content{
+		order: 0;
+		flex: 0 1 auto;
+		align-self: stretch;
+		max-width: 60%;
+		text-align: center;
 
+	}
+	&__row{
+
+	}
+	&__item{
+		margin-bottom: 60px;
+
+	}
+	&__number{
+		display: block;
+		position: relative;
+		width: 60px;
+		height: 60px;
+		margin: 0 auto 32px;
+		background-color: fade(white, 60%);
+		border-radius: 100%;
+		color: darken(@thirdColor, 10%);
+		font-size: 36px;
+		z-index: 3;
+		&:before{
+			display: block;
+			position: absolute;
+			top: 0;
+			left: -13px;
+			bottom: 0;
+			right: 0;
+			content: '';
+			width: 86px;
+			height: 86px;
+			margin: auto;
+			background-color: fade(white, 40%);
+			border-radius: 100%;
+			z-index: 2;
+
+		}
+
+	}
+	&__text{
+		color: white;
+
+	}
+	&__img-wrapper{
+		position: relative;
+		order: 0;
+		flex: 0 1 auto;
+		align-self: flex-end;
+
+	}
+	&__img{
+		display: block;
+		position: relative;
+		width: 624px;
+		height: auto;
+		top: 60px;
+		right: 0;
+		bottom: 0;
+		left: 180px;
+
+	}
+
+}
+
+// .slider
+.slider__wrapper{
+	background-image: url('http://workshop.scordavis.com/backdoor/info-uksusoff/icons/pattern.jpg');
+	background-repeat: repeat;
+	-webkit-background-size: auto;
+	background-size: auto;
+	background-position: center;
+	border-top: 2px solid #336296;
+	border-bottom: 2px solid #336296;
+
+}
+.slider{
+	&__row{
+		display: block;
+		// width: 80%;
+
+	}
+	&__item{
+		display: block;
+		width: 262px;
+		height: 262px;
+		// margin: 0 15px;
+
+	}
+	&__img-wrapper{
+		display: block;
+		width: 100%;
+		height: 100%;
+
+	}
+	&__img{
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: white;
+		border: 1px solid @accentColor;
+		border-radius: 4px;
+		object-fit: cover;
+
+	}
+
+}
 
 
 

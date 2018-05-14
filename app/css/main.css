@@ -459,6 +459,9 @@ body {
   padding-top: 60px;
   padding-bottom: 100px;
 }
+.padding-block--top {
+  padding-bottom: 0;
+}
 .block-heading {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -469,19 +472,23 @@ body {
   color: #333b44;
   border-bottom: 3px solid #333b44;
 }
+.block-heading span {
+  text-transform: uppercase;
+}
 .block-heading--light {
   color: white;
   border-bottom: 3px solid white;
+}
+.block-heading--center {
+  margin: auto;
+  margin-bottom: 100px;
 }
 .pains-wrapper {
   background-color: #f5f5f5;
 }
 .pains__row {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
@@ -727,4 +734,139 @@ body {
 }
 .trigger__wrapper .trigger__prices--new {
   font-size: 24px;
+}
+.steps__wrapper {
+  overflow: hidden;
+  background-image: -webkit-linear-gradient(-159deg, #345f90 0%, #33669e 25%, #326dac 46%, #345f90 100%);
+  background-image: -ms-linear-gradient(-159deg, #345f90 0%, #33669e 25%, #326dac 46%, #345f90 100%);
+}
+.steps {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 1064px;
+}
+.steps__content {
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  max-width: 60%;
+  text-align: center;
+}
+.steps__item {
+  margin-bottom: 60px;
+}
+.steps__number {
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 32px;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  color: #2b7c7f;
+  font-size: 36px;
+  z-index: 3;
+}
+.steps__number:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -13px;
+  bottom: 0;
+  right: 0;
+  content: '';
+  width: 86px;
+  height: 86px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  z-index: 2;
+}
+.steps__text {
+  color: white;
+}
+.steps__img-wrapper {
+  position: relative;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+}
+.steps__img {
+  display: block;
+  position: relative;
+  width: 624px;
+  height: auto;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  left: 180px;
+}
+.slider__wrapper {
+  background-image: url('http://workshop.scordavis.com/backdoor/info-uksusoff/icons/pattern.jpg');
+  background-repeat: repeat;
+  -webkit-background-size: auto;
+  background-size: auto;
+  background-position: center;
+  border-top: 2px solid #336296;
+  border-bottom: 2px solid #336296;
+}
+.slider__row {
+  display: block;
+}
+.slider__item {
+  display: block;
+  width: 262px;
+  height: 262px;
+}
+.slider__img-wrapper {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.slider__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 1px solid #d54648;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
