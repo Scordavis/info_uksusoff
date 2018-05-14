@@ -36,7 +36,7 @@ gulp.task('scripts', function(){
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/fancybox/dist/jquery.fancybox.js',
-		'app/libs/slick-carousel/slick/slick.js',
+		'app/libs/slick-carousel/slick/slick.js'
 		// 'app/libs/respond/dist/respond.min.js',
 		])
 	.pipe(concat('libs.min.js'))
